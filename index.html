@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="icon" href="img/mkh7.PNG" type="img/png">
+<link rel="stylesheet" href="style.css">
+
+
+    <title>MKH SUPERMARKET</title>
+</head>
+<body>
+    <header>
+        <div id="menu-icon" class="fa fa-bars"></div>
+        <img src="img/mkh7.PNG" width="75px" height="50px">
+        <nav class="navbar">
+            <a href="#index.html" class="active">Home</a>
+            <a href="#product">product</a>
+            <a href="#payment.html">payment</a>
+            <a href="#review">review</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <div class="icons">
+            <i class="fa fa-search"></i>
+            <i id="cart-icon" class="fa fa-shopping-cart"></i>
+           <a href="http://127.0.0.1:5500/login.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+        <div id="cart-container" class="cart-container" hidden >
+            <div class="cart" id="cart"></div>
+            <div class="cart-total">
+               <h2>TOTAL:</h2>
+               <p id="cart-total" class="cart-total">₦0</p> 
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container mySwiper">
+            <div class="content swiper-wrapper">
+                <div class="slides swiper-slide">
+                    <img src="img/img4.jpg" alt="">
+                    <div class="img-overlay">
+                        <!-- <p>how to become a</p>
+                        <h2>front end developer</h2>
+                        <h3>from scratch</h3>
+                        <a href="">More details</a> -->
+                    </div>
+                </div>
+                <div class="slides swiper-slide">
+                    <img src="img/supermarket.avif" alt="">
+                    <div class="img-overlay">
+                        <!-- <p>how to become a</p>
+                        <h2>back end developer</h2>
+                        <h3>from scratch</h3>
+                        <a href="">More details</a> -->
+                    </div>
+                </div>
+                <div class="slides swiper-slide">
+                    <img src="img/img4.jpg" alt="">
+                    <div class="img-overlay">
+                        <!-- <p>how to become a</p>
+                        <h2>Digital developer</h2>
+                        <h3>from scratch</h3>
+                        <a href="">More details</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next btn"></div>
+            <div class="swiper-button-prev btn"></div>
+            <div class="swiper-scrollbar btn"></div>
+            <div class="swiper-pagination"></div>   
+        </div>
+    </main>
+    <section class="product" id="product">
+        <h1>product</h1>
+        <!-- <div class="category">
+            <h2 class="text">drinks</h2>
+            <div class="product_box">
+                <div class="product_card">
+                    <div class="product_img">
+                        <img src="img/chapman.webp" alt="">
+                    </div>
+                    <div class="small_card">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product_info">
+                        <h2>RSchweppes Chapman Can 33 cl x6</h2>
+                        <h3>₦1,030.00</h3>
+                    </div>
+                    <div class="product_icon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="product_btn">Order Now</a>
+
+                </div>
+                <div class="product_card">
+                    <div class="product_img">
+                        <img src="img/sky.webp" alt="">
+                    </div>
+                    <div class="small_card">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product_info">
+                        <h2>Skyy Vodka Passion Fruit 100 cl</h2>
+                        <h3>₦9,210.00</h3>
+                    </div>
+                    <div class="product_icon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="product_btn">Order Now</a>
+
+                </div>
+                <div class="product_card">
+                    <div class="product_img">
+                        <img src="img/drink3.webp" alt="">
+                    </div>
+                    <div class="small_card">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product_info">
+                        <h2>Farmfresh Yoghurt Strawberry 1 L
+                            </h2>
+                        <h3>₦2,595.00</h3>
+                    </div>
+                    <div class="product_icon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="product_btn">Order Now</a>
+
+                </div>
+                <div class="product_card">
+                    <div class="product_img">
+                        <img src="img/monster.webp" alt="">
+                    </div>
+                    <div class="small_card">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product_info">
+                        <h2>Monster Ultra Energy Drink Zero Sugar 44 cl</h2>
+                        <h3>₦615.00</h3>
+                    </div>
+                    <div class="product_icon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="product_btn">Order Now</a>
+
+                </div>
+                <div class="product_card">
+                    <div class="product_img">
+                        <img src="img/drink6.webp" alt="">
+                    </div>
+                    <div class="small_card">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product_info">
+                        <h2>Sandara Sparkling Rose Wine 75 cl</h2>
+                        <h3>₦2,700.00</h3>
+                    </div>
+                    <div class="product_icon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="product_btn">Order Now</a>
+
+                </div>
+                <div class="product_card">
+                    <div class="product_img">
+                        <img src="img/drink7.webp" alt="">
+                    </div>
+                    <div class="small_card">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product_info">
+                        <h2>Andre Rose California Sparkling Wine 75 cl</h2>
+                        <h3>₦6,030.00</h3>
+                    </div>
+                    <div class="product_icon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="product_btn">Order Now</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="category">
+            <h2 class="text">toiletries</h2>
+            <div class="product_box">
+                <div class="product_card">
+                    <div class="product_img">
+                        <img src="img/dettol.webp" alt="">
+                    </div>
+                    <div class="small_card">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product_info">
+                        <h2>Dettol Anti-Bacterial Soap Original 160 g</h2>
+                        <h3>₦1,045.00</h3>
+                    </div>
+                    <div class="product_icon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="product_btn">Order Now</a>
+    
+                </div>
+                <div class="product_card">
+                    <div class="product_img">
+                        <img src="img/mouthwash.webp" alt="">
+                    </div>
+                    <div class="small_card">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product_info">
+                        <h2>Listerine Mouthwash Cool Mint 250 ml</h2>
+                        <h3>₦3,120.00</h3>
+                    </div>
+                    <div class="product_icon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="product_btn">Order Now</a>
+    
+                </div>
+                <div class="product_card">
+                    <div class="product_img">
+                        <img src="img/paste.webp" alt="">
+                    </div>
+                    <div class="small_card">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product_info">
+                        <h2>Sensodyne Toothpaste Extra Whitening 75 ml </h2>
+                        <h3> ₦1,380.00</h3>
+                    </div>
+                    <div class="product_icon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="product_btn">Order Now</a>
+    
+                </div>
+                <div class="product_card">
+                    <div class="product_img">
+                        <img src="img/gel.webp" alt="">
+                    </div>
+                    <div class="small_card">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product_info">
+                        <h2>Irish Spring Body Wash Deep Action Scrub 532 ml</h2>
+                        <h3>₦4,550.00</h3>
+                    </div>
+                    <div class="product_icon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="product_btn">Order Now</a>
+    
+                </div>
+                <div class="product_card">
+                    <div class="product_img">
+                        <img src="img/toliet.webp" alt="">
+                    </div>
+                    <div class="small_card">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product_info">
+                        <h2>Boulos Rose Plus Toilet Tissue 2 Ply 12 Rolls</h2>
+                        <h3> ₦1,920.00</h3>
+                    </div>
+                    <div class="product_icon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="product_btn">Order Now</a>
+    
+                </div>
+                <div class="product_card">
+                    <div class="product_img">
+                        <img src="img/ari.webp" width="50%" height="100vh" alt="">
+                    </div>
+                    <div class="small_card">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product_info">
+                        <h2>Ariel Machine Expert Detergent Powder Ultimate Clean 1.8 kg</h2>
+                        <h3> ₦4,650.00</h3>
+                    </div>
+                    <div class="product_icon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="product_btn">Order Now</a>
+    
+                </div>
+               
+            </div>
+        </div>
+        <div class="category">
+            <h2 class="text">snacks</h2>
+            <div class="product_box">
+                <div class="product_card">
+                    <div class="product_img">
+                        <img src="img/chin.webp" alt="">
+                    </div>
+                    <div class="small_card">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product_info">
+                        <h2>Chin Chin (Cubes) - Semi-Medium Jar</h2>
+                        <h3>₦3,200.00</h3>
+                    </div>
+                    <div class="product_icon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="product_btn">Order Now</a>
+    
+                </div>
+                <div class="product_card">
+                    <div class="product_img">
+                        <img src="img/coconut.webp"  alt="">
+                    </div>
+                    <div class="small_card">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product_info">
+                        <h2>Reelfruit Coconut Flakes Sweetened 100 g</h2>
+                        <h3>₦1,065.00</h3>
+                    </div>
+                    <div class="product_icon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="product_btn">Order Now</a>
+    
+                </div>
+                <div class="product_card">
+                    <div class="product_img">
+                        <img src="img/lay.webp" alt="">
+                    </div>
+                    <div class="small_card">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product_info">
+                        <h2>Lay's Chips Nature 75 g</h2>
+                        <h3>₦1,865.00</h3>
+                    </div>
+                    <div class="product_icon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="product_btn">Order Now</a>
+    
+                </div>
+                <div class="product_card">
+                    <div class="product_img">
+                        <img src="img/ice.webp" alt="">
+                    </div>
+                    <div class="small_card">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product_info">
+                        <h2>Go Slo Cookies & Cream 320 ml</h2>
+                        <h3>₦3,090.00</h3>
+                    </div>
+                    <div class="product_icon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="product_btn">Order Now</a>
+    
+                </div>
+                <div class="product_card">
+                    <div class="product_img">
+                        <img src="img/chocolate.jpg" alt="">
+                    </div>
+                    <div class="small_card">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product_info">
+                        <h2>Dairy Milk Fruit & Nut 200 g</h2>
+                        <h3>₦3,820.00</h3>
+                    </div>
+                    <div class="product_icon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="product_btn">Order Now</a>
+    
+                </div>
+                <div class="product_card">
+                    <div class="product_img">
+                        <img src="img/skitt.avif" alt="">
+                    </div>
+                    <div class="small_card">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="product_info">
+                        <h2>Skittles 37 g</h2>
+                        <h3>₦895.00</h3>
+                    </div>
+                    <div class="product_icon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="product_btn">Order Now</a>
+    
+                </div>
+               
+            </div>
+        </div> -->
+    </section>
+    <div class="review">
+        <h1>Customer`s review</h1>
+        <h5>check what they say about us...</h5>
+        <div class="review_box" id="review">
+            <div class="profile">
+                <img src="img/perdx.jpg" alt="">
+                <p>I would highly recommend their Services to anyone seeking. Their commitment to excellence, combined with <br>a customer-centric approach,</p>
+                <h2>ayomide felix</h2>
+                <h4>Finance adviser</h4>
+                <i class="fa fa-quote-left"></i>
+
+            </div>
+            <div class="profile">
+                <img src="img/person4-.webp" alt="">
+                <p>I would highly recommend their Services to anyone seeking. Their commitment to excellence, combined with<br> a customer-centric approach,</p>
+                <h2>john smith</h2>
+                <h4>security manager</h4>
+                <i class="fa fa-quote-left"></i>
+
+            </div>
+            <div class="profile">
+                <img src="img/person10.webp" alt="">
+                <p>I would highly recommend their Services to anyone seeking. Their commitment to excellence, combined with <br> a customer-centric approach,</p>
+                <h2>maria messy</h2>
+                <h4>supermarket owner</h4>
+                <i class="fa fa-quote-left"></i>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+      <!---Scroll Top-->
+      <a href="#" class="scroll">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="slides.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

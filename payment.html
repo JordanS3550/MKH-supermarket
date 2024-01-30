@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="icon" href="img/mkh7.PNG" type="img/png">
+    <title>MKH SUPERMARKET</title>
+</head>
+<!-- <style>
+    .left{
+        position: relative;
+        top: 200px;
+    }   
+</style> -->
+<body>
+    <header>
+        <div id="menu-icon" class="fa fa-bars"></div>
+        <img src="img/mkh7.PNG" width="75px" height="50px">
+        <nav class="navbar">
+            <a href="http://127.0.0.1:5500/index.html" class="active">Home</a>
+            <a href="#Shop">product</a>
+            <a href="http://127.0.0.1:5500/payment.html ">payment</a>
+            <a href="#contact">review</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <div class="icons">
+            <i class="fa fa-search"></i>
+            <i class="fa fa-shopping-cart"></i>
+            <a href="index.html"></a><i class="fa-solid fa-user"></i>
+        </div>
+    </header>
+    <div class="container">
+        <div class="left">
+            <p>
+                payment method
+            </p>
+            <hr>
+            <div class="methods">
+                <div onclick="doFun()" id="tcolorA" style="color: greenyellow;">
+                    <i class="fa-solid fa-credit-card"></i>
+                    payment of card
+                </div>
+                <div onclick="doFunA()" id="tcolorB"><i class="fa-solid fa-building-columns"></i>
+                    internet banks
+                </div>
+                <div onclick="doFunB()" id="tcolorC"><i class="fa-solid fa-wallet"></i>
+                    wallet
+                </div>
+                <hr>
+            </div>
+            <div class="center">
+                <a href="#">
+                    <img src="img/cardvisa-removebg-preview.png" alt="" width="250px" height="auto">
+                </a>
+                <hr>
+                <div class="card_details">
+                    <form action="#">
+                        <p>card number</p>
+                        <div class="c-number" id="c-number">
+                            <input id="number" class="cc-number" placeholder="Card number" maxlength="19" required>
+                            <i class="fa-solid fa-credit-card"></i>
+                        </div>
+                        <div class="c-details">
+                            <div>
+                                <p>Expiry date</p>
+                                <input id="e-date" class="cc-exp" placeholder="MM/YY" required maxlength="5" required>
+                            </div>
+                            <div>
+                                <p>CW</p>
+                                <div class="cvv-box" id="cvv-box">
+                                    <input id="cvv" class="cc-cvv" placeholder="CVV" required maxlength="3" required>
+                                    <i class="fa-solid fa-circle-question" title="3 digits on the back of your card"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <p>Email</p>
+                            <input type="email" placeholder="examples@email.com" id="email" required>
+                        </div>
+                        <button>pay now</button>
+                    </form>
+                </div>
+            </div>
+           <!-- <div class="right">
+                <p>order information</p>
+                <hr>
+                <div class="details">
+                    <div style="font-weight: bold; padding: 3px 0;">order description</div>
+
+                </div>
+                <div style="padding: 3px 0;">
+                    Test payment
+                </div>
+           </div> 
+           <hr>
+           <a href="#">
+            <img src="img/cardvisa-removebg-preview.png" alt="" width="250px" height="auto">
+        </a>
+        </div>
+    </div> -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- 
+
+
+
+<header>
+    <div id="menu-icon" class="fa fa-bars"></div>
+    <img src="img/mkh7.PNG" width="75px" height="50px">
+    <nav class="navbar">
+        <a href="http://127.0.0.1:5500/index.html" class="active">Home</a>
+        <a href="#Shop">product</a>
+        <a href="#">payment</a>
+        <a href="#contact">review</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <div class="icons">
+        <i class="fa fa-search"></i>
+        <i class="fa fa-shopping-cart"></i>
+        <a href="index.html"></a><i class="fa-solid fa-user"></i>
+    </div>
+</header>
+<div class="container">
+    <div class="left">
+        <p>
+            payment method
+        </p>
+        <hr>
+        <div class="methods">
+            <div onclick="doFun()" id="tcolorA" style="color: greenyellow;">
+                <i class="fa-solid fa-credit-card"></i>
+
+            </div>
+        </div>
+    </div>
+</div> -->
